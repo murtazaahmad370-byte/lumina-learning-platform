@@ -8,6 +8,7 @@ import { StatsBanner } from './components/StatsBanner';
 import { AboutSection } from './components/AboutSection';
 import { TrendingCarousel } from './components/TrendingCarousel';
 import { CourseLibrary } from './components/CourseLibrary';
+import { FeaturedCourses } from './components/FeaturedCourses';
 import { Testimonials } from './components/Testimonials';
 import { CommunityCTA } from './components/CommunityCTA';
 import { AuthPage } from './components/AuthPage';
@@ -242,10 +243,7 @@ function AppContent() {
               <StatsBanner />
               <AboutSection />
               <TrendingCarousel onSelectCourse={openCourseDetails} />
-              <CourseLibrary
-                searchQuery={searchQuery}
-                activeCategory={selectedCategory}
-                setActiveCategory={setSelectedCategory}
+              <FeaturedCourses
                 onSelectCourse={openCourseDetails}
                 onWatchCourse={openPlayer}
                 onViewAllCourses={handleNavigateCourses}
